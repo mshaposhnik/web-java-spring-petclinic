@@ -15,24 +15,6 @@ tools:
   - name: lsp
     type: chePlugin
     id: org.eclipse.che.vscode-redhat.java:0.38.0
-#  - name: dev
-#    type: dockerimage
-#    image: registry.devshift.net/che/centos_jdk8
-#    volumes:
-#      - name: maven-repo
-#        containerPath: /root/.m2
-#    env:
-#      - name: CHE_MACHINE_NAME
-#        value: ws-machine
-#    endpoints:
-#      - name: maven-server
-#        port: 8080
-#        attributes:
-#          protocol: http
-#          secure: 'false'
-#          public: 'true'
-#          discoverable: 'false'
-#    memoryLimit: 2048M
 commands:
   - name: build
     actions:
