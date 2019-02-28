@@ -12,7 +12,7 @@ tools:
   - name: exec-plugin
     type: chePlugin
     id: che-machine-exec-plugin:0.0.1
-  - name: language-server
+  - name: lsp
     type: chePlugin
     id: org.eclipse.che.vscode-redhat.java:0.38.0
   - name: dev
