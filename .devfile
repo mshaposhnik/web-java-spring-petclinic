@@ -29,7 +29,7 @@ tools:
           secure: 'false'
           public: 'true'
           discoverable: 'false'
-    memoryLimit: 2048M
+        memoryLimit: 2048M
 commands:
   - name: build & run
     actions:
