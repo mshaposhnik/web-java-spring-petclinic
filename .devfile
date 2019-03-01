@@ -1,35 +1,28 @@
 specVersion: 0.0.1
 name: spring-petclinic
 projects:
-  -
-    name: spring-petclinic
+  - name: spring-petclinic
     source:
       type: git
       location: 'https://github.com/mshaposhnik/web-java-spring-petclinic.git'
 tools:
-  -
-    name: theia-ide
+  - name: theia-ide
     type: cheEditor
     id: 'org.eclipse.che.editor.theia:1.0.0'
-  -
-    name: exec-plugin
+  - name: exec-plugin
     type: chePlugin
     id: 'che-machine-exec-plugin:0.0.1'
-  -
-    name: dev
+  - name: dev
     type: dockerimage
     image: registry.devshift.net/che/centos_jdk8
     volumes:
-      -
-        name: maven-repo
+      - name: maven-repo
         containerPath: /root/.m2
     env:
-      -
-        name: CHE_MACHINE_NAME
+      - name: CHE_MACHINE_NAME
         value: ws-machine
     endpoints:
-      -
-        name: maven-server
+      - name: maven-server
         port: 8080
         attributes:
           protocol: http
@@ -38,11 +31,9 @@ tools:
           discoverable: 'false'
     memoryLimit: 2048M
 commands:
-  -
-    name: build_run
+  - name: build_run
     actions:
-      -
-        type: exec
+      - type: exec
         tool: dev
         command: 'cd /projects/spring-petclinic && mvn clean install && cp /projects/spring-petclinic/target/*.war && $TOMCAT_HOME/webapps/ROOT.war && $TOMCAT_HOME/bin/catalina.sh run 2>&1'
         workdir: /projects/spring-petclinic
