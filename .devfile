@@ -29,8 +29,8 @@ tools:
           secure: 'false'
           public: 'true'
           discoverable: 'false'
-     memoryLimit: 2048M
-commands:
+    memoryLimit: 2048M
+ commands:
   - name: build_run
     actions:
       - type: exec
