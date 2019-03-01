@@ -15,9 +15,6 @@ tools:
   - name: dev
     type: dockerimage
     image: registry.devshift.net/che/centos_jdk8
-    volumes:
-      - name: maven-repo
-        containerPath: /root/.m2
     env:
       - name: CHE_MACHINE_NAME
         value: ws-machine
