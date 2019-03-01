@@ -20,7 +20,7 @@ tools:
         value: ws-machine
     mountSources: true    
     endpoints:
-      - name: maven-server
+      - name: petclinic-web-server
         port: 8080
         attributes:
           protocol: http
