@@ -35,5 +35,5 @@ commands:
     actions:
       - type: exec
         tool: dev
-        command: 'cd /projects/spring-petclinic && mvn clean install && cp /projects/spring-petclinic/target/*.war && $TOMCAT_HOME/webapps/ROOT.war && $TOMCAT_HOME/bin/catalina.sh run 2>&1'
+        command: cd /projects/spring-petclinic && mvn clean install && cp /projects/spring-petclinic/target/*.war && $TOMCAT_HOME/webapps/ROOT.war && $TOMCAT_HOME/bin/catalina.sh run 2>&1
         workdir: /projects/spring-petclinic
