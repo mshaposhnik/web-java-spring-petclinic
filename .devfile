@@ -18,6 +18,7 @@ tools:
     env:
       - name: CHE_MACHINE_NAME
         value: ws-machine
+    mountSources: true    
     endpoints:
       - name: maven-server
         port: 8080
