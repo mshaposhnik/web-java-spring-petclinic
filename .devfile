@@ -31,7 +31,7 @@ tools:
           discoverable: 'false'
      memoryLimit: 2048M
 commands:
-  - name: build & run
+  - name: build_run
     actions:
       - type: exec
         tool: dev
